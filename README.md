@@ -67,6 +67,7 @@ O usuário utilizado é o s3wf, o dmp e sql estão com estes usuarios, mas caso 
 
 Você irá configurar o banco de dados conforme o esquema abaixo para que sua aplicação funcione corretamente.
 
+```bash
 $ createuser s3wf -U postgres
 $ psql -d template1 -U postgres
 > alter user s3wf CREATEROLE LOGIN;
@@ -74,6 +75,7 @@ $ psql -d template1 -U postgres
 > alter user s3wf CREATEROLE;
 > alter user s3wf password 'your-senha';
 > CREATE EXTENSION pgcrypto;
+```
 
 $ createdb page-producao -U s3wf -O s3wf -E UTF-8 -T template0 -h <your-server>
 $ pg_restore -d page-producao page-producao.dmp -h <your-server> -U postgres

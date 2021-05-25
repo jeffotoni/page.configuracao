@@ -76,10 +76,10 @@ $ psql -d template1 -U postgres
 > alter user s3wf password 'your-senha';
 > CREATE EXTENSION pgcrypto;
 ```
-
+```bash
 $ createdb page-producao -U s3wf -O s3wf -E UTF-8 -T template0 -h <your-server>
 $ pg_restore -d page-producao page-producao.dmp -h <your-server> -U postgres
-
+```
 
 Lembrando que o postgres tem que ser configurado para os acessos basicamente em pg_hba e postgresql.conf.
 

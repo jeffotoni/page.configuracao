@@ -32,12 +32,17 @@ serviço entrotra aqui: [gowkhtmlpdf](https://github.com/jeffotoni/gowkhtmltopdf
 Ele pode rodar em docker, e vc configura para que os relatórios possam utiliza-los.
 
 ### PHP
-O seu server deverá rodar em LINUX, e a versão do PHP deverá ser PHP 7.0.15.
+
+O seu server deverá rodar em LINUX, e a versão do PHP deverá ser PHP 7.0.15, porém sugiro instalar o ZendServer para rodar 100%.
+Logo abaixo a versão do ZendServer que irão precisar para configurar.
+
 Os módulos instalados do php são os defaults nada de especial foi utilizado abaixo deixei o link para visualizarem os pacotes.
 
 [Visualizar modulos php](https://gist.github.com/jeffotoni/a260fcc9f712c4d4a2bf47e0c2e253f4)
+[zendServer](https://s3wf.sfo2.digitaloceanspaces.com/ZendServer-9.0.2-RepositoryInstaller-linux.tar)
 
 ### Ngnix
+
 O servidor web que utilizamos foi o nginx, e a configuração dele encontra-se no diretório docserver/nginx/page.producao.conf.
 Neste diretório tem nosso nginx.conf só para terem uma ideia do que configuramos, podem usa-lo como exemplo para sua configuração se acharem necessário.
 
